@@ -1,27 +1,24 @@
-CampusFlow — Relatório Operacional
 
-Missão 1 — Fila crítica
+explicação: o índice beneficia principalmente a consulta da missão 1, 
+que filtra as solicitações pela situação e considera a prioridade. 
+Assim, o MongoDB pode localizar e ordenar os registros de maneira mais eficiente.
 
-Foram encontradas 4 solicitações abertas ou em análise com prioridade igual ou superior a 4.
+missão 1 — fila crítica - foram encontradas 4 solicitações abertas ou em análise com prioridade igual ou superior a 4;
 
-Missão 2 — Backlog
+missão 2 — backlog - a categoria com maior quantidade de solicitações pendentes é Aproveitamento de disciplina, com 3 registros;
 
-A categoria com maior quantidade de solicitações pendentes é Aproveitamento de Disciplina, com 3 registros.
+missão 3 — carga por setor - a secretaria possui 10 interações e média de 9,7 minutos. Já a coordenação possui 5 interações, mas média de 47 minutos e maior duração de 55 minutos.
+Portanto, o maior tempo de atendimento está na coordenação, não na Secretaria;
 
-Missão 3 — Carga por setor
+missão 4 — estudantes recorrentes;
 
-A Secretaria possui 10 interações e média de 9,7 minutos. Já a Coordenação possui 5 interações, mas média de 47 minutos e maior duração de 55 minutos. Portanto, o maior tempo de atendimento está na Coordenação, não na Secretaria.
+ana ribeiro possui 3 solicitações e bruno lima possui 2. 
+Isso mostra uma concentração de registros em alguns estudantes;
 
-Missão 4 — Estudantes recorrentes
+missão 5 — conclusões;
 
-Ana Ribeiro possui 3 solicitações e Bruno Lima possui 2. Isso mostra uma concentração de registros em alguns estudantes.
+1. aproveitamento de disciplina possui o maior backlog;
+2. a coordenação apresenta o maior tempo médio de atendimento;
+3. ana ribeiro é a estudante com mais solicitações.
 
-Missão 5 — Conclusões
-
-1. Aproveitamento de Disciplina possui o maior backlog.
-2. A Coordenação apresenta o maior tempo médio de atendimento.
-3. Ana Ribeiro é a estudante com mais solicitações.
-
-Índice
-
-O índice beneficia principalmente a consulta da Missão 1, pois utiliza os campos situacao e prioridade para filtrar os documentos.
+índice - o índice beneficia principalmente a consulta da missão 1, pois utiliza os campos situacao e prioridade para filtrar os documentos.
